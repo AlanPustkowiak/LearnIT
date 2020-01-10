@@ -18,14 +18,17 @@ class Solution {
 
     // Complete the staircase function below.
     static void staircase(int n) {
-        for (int i = 0; i < n; i++)
+        for (int i = 1; i < n; i++)
         {
-            System.Console.WriteLine("#");
-            for (int j = 0; j < ; j++)
-            {
-                System.Console.WriteLine("#");
-            }
-
+           for (int j = 1; j <= n - i; j++)
+           {
+               Console.Write("");  
+           }
+           for (int k = 1; k <= i; k++)
+           {
+               Console.Write("*");
+           }
+           Console.WriteLine("");
         }
     }
 
